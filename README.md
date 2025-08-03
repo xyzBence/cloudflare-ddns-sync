@@ -52,8 +52,8 @@ You can find the Zone ID in your Cloudflare dashboard under:
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/cloudflare-ddns-updater.git
-cd cloudflare-ddns-updater
+git clone https://github.com/xyzBence/cloudflare-ddns-sync.git
+cd cloudflare-ddns-sync
 ```
 
 2. Run the installer script:
