@@ -1,0 +1,14 @@
+[Unit]
+Description=Update DNS record on Cloudflare
+After=network.target
+
+[Service]
+ExecStart=/bin/bash /opt/cloudflare-ddns-updater/update-dns.sh
+Restart=always
+User=REPLACE_WITH_YOUR_USERNAME
+Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
